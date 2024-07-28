@@ -1,0 +1,356 @@
+public class Main{
+public static void main(String[] args) {
+String name="John";
+int myint = 395;
+double mydouble = myint;
+System.out.println("int : "+myint);
+System.out.println("double : "+mydouble);
+}
+}
+
+
+public class Main{
+public static void main(String[] args) {
+double mydouble = 9.78d;
+int myint = (int)mydouble;
+System.out.println("int : "+myint);
+System.out.println("double : "+mydouble);
+}
+}
+
+
+3. Operator -> +
+
+public class Main{
+public static void main(String[] args){
+int s1 = 100+20;
+int s2 = s1+50;
+int s3 = s1+s2;
+System.out.println("s1 : "+s1);
+System.out.println("s2 : "+s2);
+System.out.println("s3 : "+s3);
+}
+}
+
+5.Length of a string:
+
+public class Main{
+public static void main(String[] args){
+String txt = "hello world";
+System.out.println("the length of the string is : "+txt.length());
+}
+}
+
+
+6.Case conversions
+
+public class Main{
+public static void main(String[] args){
+String txt = "hello world";
+System.out.println("uppercase : "+txt.toUpperCase());
+System.out.println("lowercase : "+txt.toLowerCase());
+}
+}
+
+7.Index of a char/string
+
+public class Main{
+public static void main(String[] args){
+String txt = "Please locate where 'locate' occurs!";
+System.out.println("index : "+txt.indexOf("locate"));
+}
+
+WEEK-2:
+
+1. String concatenation
+
+public class Main {
+    public static void main(String args[]){
+        String firstname = "john";
+        String lastname = "doe";
+        System.out.println(firstname+" "+lastname);
+    }
+}
+
+2. String concatenation 2
+
+public class Main {
+    public static void main(String args[]){
+        String firstname = "john";
+        String lastname = "doe";
+        System.out.println(firstname.concat(lastname));
+    }
+}
+
+3. String concatenation 3
+
+public class Main {
+    public static void main(String args[]){
+        String x = "10";
+        int y = 20;
+        String z= x+y;
+        System.out.println(z);
+    }
+}
+
+4. Escape sequence “/”
+
+public class Main {
+    public static void main(String args[]){
+        String x = "we are so called \"vikings\"" +
+                "from the north";
+        System.out.println(x);
+    }
+}
+5. Math - max
+
+public class Main {
+    public static void main(String args[]){
+        System.out.println(Math.max(5,10));
+    }
+}
+
+6. Math - min
+
+public class Main {
+    public static void main(String args[]){
+        System.out.println(Math.min(5,10));
+    }
+}
+
+7. Math – sqrt
+
+public class Main {
+    public static void main(String args[]){
+        System.out.println(Math.sqrt(64));
+    }
+}
+
+8. Math – absolute
+
+public class Main {
+    public static void main(String args[]){
+        System.out.println(Math.abs(-4.561));
+    }
+}
+
+9. Math -  random
+
+public class Main {
+    public static void main(String args[]){
+        System.out.println(Math.random());
+    }
+}
+
+10. Boolean
+
+public class Main{
+public static void main(String[] args){
+boolean isjavafun = true;
+boolean isfishtasty = false;
+System.out.println(isjavafun);
+System.out.println(isfishtasty);
+}
+}
+
+11. Boolean expression
+
+public class Main{
+public static void main(String[] args){
+int x=10;
+int y=5;
+System.out.println(x>y);
+}
+}
+
+12. Boolean expression 2
+
+public class Main{
+public static void main(String[] args){
+System.out.println(10==15);
+}
+}
+
+
+13. If statement
+
+public class Main{
+public static void main(String[] args){
+if(20>18)
+System.out.println("20 greeater than 18");
+}
+}
+
+
+14. If - else statement
+
+public class Main{
+public static void main(String[] args){
+int time=20;
+if(time<18)
+System.out.println("good day");
+else
+System.out.println("good evening");
+}
+}
+
+
+
+
+
+
+15. If - elseif - else statement
+
+public class Main{
+public static void main(String[] args){
+int time=22;
+if(time<10)
+System.out.println("good morning");
+else if(time<20)
+System.out.println("good day");
+else
+System.out.println("good evening");
+}
+}
+
+
+
+
+
+
+16. Switch case
+
+public class Main{
+public static void main(String[] args){
+int day =4;
+switch (day){
+case 1:
+System.out.println("monday");
+break;
+
+case 2:
+System.out.println("tuesday");
+break;
+
+case 3:
+System.out.println("wednesday");
+break;
+
+case 4:
+System.out.println("thursday");
+break;
+
+case 5:
+System.out.println("friday");
+break;
+
+case 6:
+System.out.println("saturday");
+break;
+
+case 7:
+System.out.println("sunday");
+break;
+
+default:
+System.out.println("Invalid input");
+}
+}
+}
+
+
+Week 3
+
+1)
+public class Main{
+
+    public static void  main(String[] args){
+    int i = 0;
+    
+    while(i < 5){
+    	System.out.println(i);
+    	i++;
+    }
+    }
+}
+
+
+2)
+public class Main{
+
+    public static void  main(String[] args){
+    int i = 0;
+    
+    do{
+    	System.out.println(i);
+    	i++;
+    }while(i < 5);
+    }
+}
+
+)
+public class Main{
+
+    public static void  main(String[] args){
+
+    for(int i = 0;i < 5;i++){
+
+    	System.out.println(i);
+
+    }
+    }
+}
+4)
+public class Main{
+
+    public static void  main(String[] args){
+
+    String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+    
+    for(String i: cars){
+    	System.out.println(i);
+    }
+    }
+}
+
+
+
+5)
+public class Main{
+
+    public static void  main(String[] args){
+
+    for(int i = 0; i < 10; i++){
+    	if(i==4){
+    	continue;
+    	}
+    	
+    	System.out.println(i);
+    }
+    }
+}
+
+6)
+import java.util.Scanner;
+
+public class Main{
+
+    public static void  main(String[] args){
+	
+	Scanner scanner = new Scanner(System.in);
+	String userName;
+	System.out.println("Enter username");
+	userName = scanner.nextLine();
+	System.out.println("Username is:" + userName);
+    
+    }
+}
+7. Strings
+
+public class Main{
+public static void main(String[] args){
+char[] helloarray = {'h','e','l','l','o'};
+String hellostring = new String(helloarray);
+System.out.println(hellostring);
+}
+}
