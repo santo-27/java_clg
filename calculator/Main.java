@@ -13,7 +13,7 @@ while(true){
 float a = 0;
 float b = 0;
 System.out.println("Enter the nums and the operation, enter n to break");
-String wish = scanner.nextLine();
+String wish = scanner.next();
 if(wish.equals("n")){
 break;
 }
@@ -22,27 +22,27 @@ b = scanner.nextFloat();
 
 switch(wish){
 case "+":
-System.out.printf(calc.add(a,b));
+System.out.println(calc.add(a,b));
 break;
 
 case "-":
-System.out.printf(calc.sub(a,b));
+System.out.println(calc.sub(a,b));
 break;
 
 case "*":
-System.out.printf(calc.mul(a,b));
+System.out.println(calc.mul(a,b));
 break;
 
 case "/":
-System.out.printf(calc.div(a,b));
+System.out.println(calc.div(a,b));
 break;
 
 case "%":
-System.out.printf(calc.mod(a,b));
+System.out.println(calc.mod(a,b));
 break;
 
 default:
-System.out.printf("invalid op");
+System.out.println("invalid op");
 }
 }
 
